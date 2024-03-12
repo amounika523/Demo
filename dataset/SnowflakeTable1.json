@@ -1,0 +1,51 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "DATABASE_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DATABASE_OWNER",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "IS_TRANSIENT",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "COMMENT",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CREATED",
+				"type": "TIMESTAMP_LTZ"
+			},
+			{
+				"name": "LAST_ALTERED",
+				"type": "TIMESTAMP_LTZ"
+			},
+			{
+				"name": "RETENTION_TIME",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "TYPE",
+				"type": "VARCHAR"
+			}
+		],
+		"typeProperties": {
+			"schema": "INFORMATION_SCHEMA",
+			"table": "DATABASES"
+		}
+	}
+}
