@@ -1,0 +1,41 @@
+{
+	"name": "SnowflakeTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "RANK",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "ITY",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "STATE",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CODE",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "POPULATION",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "PRICE",
+				"type": "VARCHAR"
+			}
+		],
+		"typeProperties": {
+			"schema": "SAMPLESCHEMA",
+			"table": "TEST"
+		}
+	}
+}
