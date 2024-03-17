@@ -50,6 +50,33 @@
 		"Snowflake2_properties_typeProperties_database": {
 			"value": "Sample"
 		},
+		"trigger1_properties_pipeline3_parameters_Filename": {
+			"value": "/mnt/FirstCSV"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakeurl": {
+			"value": "https://pxdbery-lz43792.snowflakecomputing.com"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakedatabse": {
+			"value": "sample"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakewarehouse": {
+			"value": "COMPUTE_WH"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakeschema": {
+			"value": "sampleschema"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakeusername": {
+			"value": "amounika523"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakepassword": {
+			"value": "@Mounikarao1"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflaketable": {
+			"value": "CSVTEST"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakedatabase": {
+			"value": "sample"
+		},
 		"containerUri": {
 			"value": ""
 		},

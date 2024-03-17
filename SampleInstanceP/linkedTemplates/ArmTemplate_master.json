@@ -67,6 +67,42 @@
 			"type": "string",
 			"defaultValue": "Sample"
 		},
+		"trigger1_properties_pipeline3_parameters_Filename": {
+			"type": "string",
+			"defaultValue": "/mnt/FirstCSV"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakeurl": {
+			"type": "string",
+			"defaultValue": "https://pxdbery-lz43792.snowflakecomputing.com"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakedatabse": {
+			"type": "string",
+			"defaultValue": "sample"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakewarehouse": {
+			"type": "string",
+			"defaultValue": "COMPUTE_WH"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakeschema": {
+			"type": "string",
+			"defaultValue": "sampleschema"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakeusername": {
+			"type": "string",
+			"defaultValue": "amounika523"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakepassword": {
+			"type": "string",
+			"defaultValue": "@Mounikarao1"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflaketable": {
+			"type": "string",
+			"defaultValue": "CSVTEST"
+		},
+		"trigger1_properties_pipeline3_parameters_snowflakedatabase": {
+			"type": "string",
+			"defaultValue": "sample"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -138,6 +174,33 @@
 					},
 					"Snowflake2_properties_typeProperties_database": {
 						"value": "[parameters('Snowflake2_properties_typeProperties_database')]"
+					},
+					"trigger1_properties_pipeline3_parameters_Filename": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_Filename')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakeurl": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakeurl')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakedatabse": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakedatabse')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakewarehouse": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakewarehouse')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakeschema": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakeschema')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakeusername": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakeusername')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakepassword": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakepassword')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflaketable": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflaketable')]"
+					},
+					"trigger1_properties_pipeline3_parameters_snowflakedatabase": {
+						"value": "[parameters('trigger1_properties_pipeline3_parameters_snowflakedatabase')]"
 					}
 				}
 			},
