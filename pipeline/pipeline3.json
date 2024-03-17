@@ -31,7 +31,7 @@
 							"type": "Expression"
 						},
 						"snowflakedatabase": {
-							"value": "@pipeline().parameters.snowflakedatabse",
+							"value": "@pipeline().parameters.snowflakedatabase",
 							"type": "Expression"
 						},
 						"snowflakewarehouse": {
@@ -88,6 +88,10 @@
 			},
 			"snowflaketable": {
 				"type": "String"
+			},
+			"snowflakedatabase": {
+				"type": "String",
+				"defaultValue": "sample"
 			}
 		},
 		"annotations": []
