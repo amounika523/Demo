@@ -1,0 +1,36 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline3",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Filename": "/mnt/FirstCSV",
+					"snowflakeurl": "https://pxdbery-lz43792.snowflakecomputing.com",
+					"snowflakedatabse": "sample",
+					"snowflakewarehouse": "COMPUTE_WH",
+					"snowflakeschema": "sampleschema",
+					"snowflakeusername": "amounika523",
+					"snowflakepassword": "@Mounikarao1",
+					"snowflaketable": "CSVTEST",
+					"snowflakedatabase": "sample"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-03-17T07:07:00",
+				"endTime": "2024-03-17T07:10:00",
+				"timeZone": "Central Standard Time"
+			}
+		}
+	}
+}
