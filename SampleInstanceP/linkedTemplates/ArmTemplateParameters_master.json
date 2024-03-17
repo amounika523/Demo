@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "SampleInstanceP"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks2_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricksDeltaLake1_accessToken": {
+			"value": ""
+		},
+		"BlobStorage_connectionString": {
+			"value": ""
+		},
+		"SF_password": {
+			"value": ""
+		},
+		"Snowflake1_password": {
+			"value": ""
+		},
+		"Snowflake2_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_sasUri": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0312-064506-zp6p1lu7"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"value": "0312-064506-zp6p1lu7"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://SampleKeyVaultP.vault.azure.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://SampleKeyVaultP.vault.azure.net/"
+		},
+		"SF_properties_typeProperties_database": {
+			"value": "@{linkedService().Database}"
+		},
+		"Snowflake1_properties_typeProperties_database": {
+			"value": "snowflake_sample_data"
+		},
+		"Snowflake2_properties_typeProperties_database": {
+			"value": "Sample"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
