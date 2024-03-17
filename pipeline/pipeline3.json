@@ -31,14 +31,14 @@
 				},
 				"userProperties": [
 					{
-						"name": "Filename",
+						"name": "Filepath",
 						"value": "/mnt/FirstCSV"
 					}
 				],
 				"typeProperties": {
 					"notebookPath": "/Users/avirinenimounika@outlook.com/Blobtodatabricks",
 					"baseParameters": {
-						"Filename": {
+						"Filepath": {
 							"value": "@pipeline().parameters.Filename",
 							"type": "Expression"
 						}
