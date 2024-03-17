@@ -20,7 +20,7 @@
 					}
 				],
 				"typeProperties": {
-					"notebookPath": "/Users/avirinenimounika@outlook.com/Blobtodatabricks",
+					"notebookPath": "/Users/avirinenimounika@outlook.com/Blobstoragetosnowflake",
 					"baseParameters": {
 						"Filepath": {
 							"value": "@pipeline().parameters.Filename",
