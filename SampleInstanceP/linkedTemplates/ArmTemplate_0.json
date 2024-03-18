@@ -324,13 +324,120 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/Incremental')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Note",
+						"type": "DatabricksNotebook",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [
+							{
+								"name": "Filepath",
+								"value": "/mnt/FirstCSV"
+							}
+						],
+						"typeProperties": {
+							"notebookPath": "/Users/avirinenimounika@outlook.com/Incremental",
+							"baseParameters": {
+								"Filepath": {
+									"value": "@pipeline().parameters.Filename",
+									"type": "Expression"
+								},
+								"snowflakeurl": {
+									"value": "@pipeline().parameters.snowflakeurl",
+									"type": "Expression"
+								},
+								"snowflakedatabase": {
+									"value": "@pipeline().parameters.snowflakedatabase",
+									"type": "Expression"
+								},
+								"snowflakewarehouse": {
+									"value": "@pipeline().parameters.snowflakewarehouse",
+									"type": "Expression"
+								},
+								"snowflakeschema": {
+									"value": "@pipeline().parameters.snowflakeschema",
+									"type": "Expression"
+								},
+								"snowflakeusername": {
+									"value": "@pipeline().parameters.snowflakeusername",
+									"type": "Expression"
+								},
+								"snowflakepassword": {
+									"value": "@pipeline().parameters.snowflakepassword",
+									"type": "Expression"
+								},
+								"snowflaketable": {
+									"value": "@pipeline().parameters.snowflaketable",
+									"type": "Expression"
+								}
+							}
+						},
+						"linkedServiceName": {
+							"referenceName": "AzureDatabricks2",
+							"type": "LinkedServiceReference"
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"Filename": {
+						"type": "String",
+						"defaultValue": "/mnt/FirstCSV"
+					},
+					"snowflakeurl": {
+						"type": "String",
+						"defaultValue": "https://pxdbery-lz43792.snowflakecomputing.com"
+					},
+					"snowflakedatabse": {
+						"type": "String"
+					},
+					"snowflakewarehouse": {
+						"type": "String"
+					},
+					"snowflakeschema": {
+						"type": "String"
+					},
+					"snowflakeusername": {
+						"type": "String"
+					},
+					"snowflakepassword": {
+						"type": "String"
+					},
+					"snowflaketable": {
+						"type": "String"
+					},
+					"snowflakedatabase": {
+						"type": "String",
+						"defaultValue": "sample"
+					}
+				},
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks2')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/pipeline3')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Notebook1",
+						"name": "Note",
 						"type": "DatabricksNotebook",
 						"dependsOn": [],
 						"policy": {
@@ -768,7 +875,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
