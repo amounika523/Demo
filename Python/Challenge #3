@@ -9,7 +9,21 @@ Use the dictionary below. Your function should return 3.  register = {‘Michael
  Your tuple should have names sorted alphabetically in descending order. 
  Using the list above, your code should return: ('kerry', 'dickson', 'carol', 'adam')'''
 
-def register_check(register):
-
-
+def register_check(dictionary):
+    count=0
+    for value in dictionary.values():
+        if value.lower()=='yes':
+            count=count+1
+    print(count)
 register = {'Michael' : 'yes', 'John' : 'no' , 'Peter' : 'Yes', 'Mary': 'Yes'} 
+register_check(register)
+
+def Lowercase_Names(names):
+    list=[]
+    for i in range (len(names)):
+        if names[i].islower():
+            list.append(names[i])
+    my_tuple=tuple(list)
+    print(my_tuple)
+names=["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"]  
+Lowercase_Names(names)
