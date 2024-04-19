@@ -1,0 +1,17 @@
+{
+	"name": "Snowflake2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SnowflakeV2",
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"accountIdentifier": "XXXX",
+			"user": "xxxx",
+			"database": "xxx",
+			"warehouse": "xxx",
+			"role": "xxx",
+			"encryptedCredential": "xxxxx"
+		}
+	}
+}
